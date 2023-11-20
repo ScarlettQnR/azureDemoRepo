@@ -1,0 +1,18 @@
+{
+  "scriptFile": "azure-functions-example.jar",
+  "entryPoint": "com.example.Function.echo",
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "name": "req",
+      "direction": "in",
+      "authLevel": "anonymous",
+      "methods": [ "GET","POST" ]
+    },
+    {
+      "type": "http",
+      "name": "$return",
+      "direction": "out"
+    }
+  ]
+}
